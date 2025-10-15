@@ -9,6 +9,7 @@
 
 body {
     background: url(img/wallpaper2.jpg);
+
 }
 
 main {
@@ -16,8 +17,7 @@ main {
     height: 100vh;
     padding: 3% 10%;
 
-    background: rgba(171, 171, 171, 0.12);
-    border-radius: 16px;
+    background: rgba(22, 22, 22, 0.466);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(4.2px);
     -webkit-backdrop-filter: blur(4.2px);  
@@ -96,6 +96,7 @@ nav ul {
 }
 
 .main-content-img {
+    /* width: 150%; */
     width: 150%;
     overflow: hidden;
 }
@@ -223,3 +224,148 @@ footer {
 }
 
 /* RODA PÉ DE CONTAINER */
+
+/* RESPONSIVIDADE */
+
+@media (min-width: 824px) and  (max-width: 1296px) {
+    main {
+        padding: 2% 5%;
+        height: auto;
+    }
+
+    #title-content {
+        font-size: 50px;
+    }
+
+    .main-content {
+        flex-direction: column;
+    }
+
+    .main-content-text {
+        margin-top: 20px;
+    }
+
+    .main-content-text p {
+        font-size: 24px;
+        padding: 10px;
+    }
+
+    .main-content-img {
+        width: 100%;
+    }
+
+    #btn-more {
+        margin-bottom: 40px;
+        width: 500px;
+        height: 70px ;
+    }
+
+    #content-text-colum-one,
+    #content-text-colum-two {
+        margin-left: 10px;
+    }
+}
+
+@media (min-width: 668px) and (max-width: 823px) {
+    main {
+        padding: 2% 5%;
+        height: auto;
+    }
+
+    nav ul {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .main-content {
+        flex-direction: column; /* empilha imagem e texto */
+        align-items: center;
+    }
+
+    .main-content-img {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    #content-text-colum-one,
+    #content-text-colum-two {
+        width: 100%; /* texto ocupa toda a largura */
+        margin-left: 10px;
+    }
+
+    #title-content {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    #btn-more {
+        width: 500px;
+        height: 70px ;
+    }
+}
+
+@media (max-width: 667px) {
+    main {
+        height: auto;
+    }
+
+    header {
+        height: auto;     
+    }
+
+    h2 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+     nav ul {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 15px;
+    }
+
+    .main-content-left {
+        flex-direction: column; /* empilha imagem e texto */
+        align-items: center;
+    }
+
+    .main-content {
+        flex-direction: column;
+    }
+
+    .main-content-text {
+        flex-direction: column;
+
+    }
+
+    .main-content-img {
+        width: 97%;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    #content-text-colum-one,
+    #content-text-colum-two {
+        width: 100%; /* texto ocupa toda a largura */
+    }
+
+    #btn-more {
+        width: 100%;
+        height: 70px ;
+        font-size: auto;
+    }
+
+    .main-content-text p {
+        white-space: pre-wrap;
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        letter-spacing: 1px;
+    }
+
+
+}
+
+/* RESPONSIVIDADE */
